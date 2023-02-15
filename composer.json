@@ -1,0 +1,33 @@
+{
+    "name": "mdalimrun/combined-payment-library",
+    "autoload": {
+        "psr-4": {
+            "Mdalimrun\\CombinedPaymentLibrary\\": "src/"
+        },
+        "files": [
+            "src/Library/Responses.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Md Al imrun Khandakar",
+            "email": "md.alimrun@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mdalimrun\\CombinedPaymentLibrary\\PaymentServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "doctrine/dbal": "3.5.x-dev",
+        "stripe/stripe-php": "^10.0",
+        "razorpay/razorpay": "dev-master",
+        "unicodeveloper/laravel-paystack": "dev-master",
+        "mercadopago/dx-php": "dev-master",
+        "srmklive/paypal": "*"
+    }
+}
